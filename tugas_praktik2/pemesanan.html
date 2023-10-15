@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Camera Online Store</title>
+    </head>
+    <body>
+        <style align="center">
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+            }
+        
+            li {
+                float: left;
+                border-right:1px solid #bbb;
+            }
+        
+            li:last-child {
+                border-right: none;
+            }
+        
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+        
+            li a:hover:not(.active) {
+                background-color: #111;
+            }
+            
+            .active {
+                background-color: #ff0000;
+            }
+        </style>
+            <ul>
+                <li style="width:20%"><a class="active" href="#home">Home</a></li>
+                <li style="width:20%"><a href="#generatelink">Generate Link</a></li>
+                <li style="width:20%"><a href="#transactionhistory">Transaction History</a></li>
+                <li style="width:20%"><a href="#policy">Policy</a></li>
+                <li style="float:right;width:19.7%"><a href="#logout">Logout</a></li>
+            </ul>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            width: 50px;
+            padding: 10px;
+            height: 300px; 
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        </style>
+        <br>
+        <div class="row">
+            <div class="column" style="background-color:#ffffff ; width:30%">
+                <img style="border: 5px solid black; width: 350px;" src="../tugas_praktik2/foto/camera.jpg" > 
+                <table align="center">
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Upload Picture"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="column" style="background-color:#ffffff ; width:70%">
+                <table>
+                    <tr>
+                        <td>Title Here :</td> 
+                        <td><input type="text" name="titlehere"></td>
+                    </tr>
+                    <tr>
+                        <td>Description :</td> 
+                        <td><textarea name="Description" id="Description" cols="80" rows="5"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Account Number :</td> 
+                        <td><input type="number" name="accountnumber"></td>
+                    </tr>
+                    <tr>
+                        <td>Bank :</td> 
+                        <td><input type="number" name="Bank"></td>
+                    </tr>
+                    <tr>
+                        <td>Account Holder :</td> 
+                        <td><input type="number" name="accountholder"></td>
+                    </tr>
+                    <tr>
+                        <td>Transaction :</td> 
+                        <td>
+                            <select id="Transaction">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option> 
+                            </select> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>* if the transaction is for 3 person, choose 3 from the drop-down list</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="checkbox" name="Transaction[]" value="Send to Mobile Phone">Send to Mobile Phone</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="checkbox" name="Transaction[]" value="Send to Email">Send to Email</td>
+                    </tr>
+                    <tr>
+                        <td>Send to Mobile Phone :</td>
+                        <td><input type="number" name="sendtomobilephone"></td>
+                    </tr>
+                    <tr>
+                        <td>Send to Email :</td>
+                        <td><input type="gmail" name="sendtoemail"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
